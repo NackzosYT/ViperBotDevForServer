@@ -394,6 +394,73 @@ client.on('message' , message => {
 
 
 
+//bc
+
+client.on("message", message => {
+    if (message.content.startsWith("!bc")) {
+                 if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+  let args = message.content.split(" ").slice(1);
+  var argresult = args.join(' ');
+  message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
+  m.send(`${argresult}\n ${m}`);
+  })
+  message.channel.send(`\`${message.guild.members.filter( m => m.presence.status !== 'all').size}\`:mailbox:  عدد المستلمين `);
+  message.delete();
+  };
+  });
+
+
+//bc online
+
+
+  var prefix = "!";
+
+  client.on("message", message => {
+  
+              if (message.content.startsWith(prefix + "!obc")) {
+                           if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+    let args = message.content.split(" ").slice(1);
+    var argresult = args.join(' '); 
+    message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
+   m.send(`${argresult}\n ${m}`);
+  })
+   message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` :mailbox:  عدد المستلمين `); 
+   message.delete(); 
+  };     
+  });
+
+
+
+
+
+
+
+
+
+
+  client.on('message', message => {
+    if(!message.channel.guild) return;
+let args = message.content.split(' ').slice(1).join(' ');
+if (message.content.startsWith('!adminbc')){
+if(!message.author.id === '525335066289635338') return;
+message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
+client.users.forEach(m =>{
+m.sendMessage(args)
+})
+}
+});
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
 
   client.on('message', msg => {
     if(msg.author.bot) return;
@@ -477,101 +544,103 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
     let pages = [`
 ***__وصف عن البوت__***
 **
-Arab Shop يقدم لكم بوت
+ViperBot
 افضل الميزات :heart:
 :gem:  البوت فيه كثير ميزات حلوة و جميلة
  ا:rocket: البوت يعمل 24 ساعه 
 بوت يمتلك مضد جحفله +سبام+نشر روابط+مضاد سب :gear: 
+وحمايه قويه من الهكر و المخترقين
+قريبا سوف نضيف اللوق
 **
         ***__General orders__***
 **
-『!allbots/لعرض جميع البوتات الي بالسيرفر』
-『!server/يعرض لك معلومات عن السيرفر』
-『!bot/يعرض لك كل معلومات البوت』
-『!skin <name>/يعرض لك سكنك بماين كرافت』
-『!count/يعرض لك عدد الاشخاص بالسيرفر بدون بوتات』
-『!invites/ يعرض لك  عدد انفايتاتك بالسيرفر 』
-『!invite-codes/يعرض لك روابط الانفايتات حكك في السيرفر 』
-『!cal/اله حاسبة』
-『!trans <language> <any thing>/يترجم لك الي تبيه من اي لغة』
-『!short/يختصر لك رابط كبير الى رابط صغير』
-『!tag/يكتب لك الكلمة بشكل جميل وكبير』
-『!google/للبحث في قوقل عن طريق الدسكورد』
-『!perms/يعرض لك برمشناتك بالسيرفر』
-『!yn/تسأل بوت والبوت يجاوبك بنعم او لا』
-『!w/امر يخليك مثل بوت تكتب عبره مع امر ويسويك بوت』
-『!za5/يزخرف لك كلمة او جملة』
-『!rooms/يعرض لك كل الرومات الي بالسيرفر مع عددها』
-『!roles/يعرض لك كل الرانكات بالسيرفر بشكل جميل』
-『!emojilist/يعرض لك كل الايموجيات الي بالسيرفر』
-『say/يكرر الكلام الي تكتبو』
-『!image/صورة السيرفر』
-『!members/��عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』
-『!id/معلومات عنك』
-『!profile/عرض بروفايل حقك』
-『!tc/انشاء روم مؤقت ويمكنك تحديد الاعدادات』
-『!bans / عدد الاشخاص المبندة 』
-『!voice /  يوم لك بكتابه مجموع عدد الاشخاص الموجودين برومات』
-『!avatar/صورتك او صورة الي تمنشنو』
-『!embed/يكرر الي تقولو بشكل حلو』
-『!discrim/كود يضهر لك الاشخاص نفس تاقك』
-『!emoji <any things>/لتحويل اي كلمه تقولها الي ايموجي』
+!allbots - لعرض جميع البوتات الي بالسيرفر
+!server - يعرض لك معلومات عن السيرفر
+!bot - يعرض لك كل معلومات البوت
+!skin <name> - يعرض لك سكنك بماين كرافت
+!count - يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
+!invites - يعرض لك  عدد انفايتاتك بالسيرفر 
+!invite-codes - يعرض لك روابط الانفايتات حكك في السيرفر 
+!cal - اله حاسبة
+!trans <language> <any thing> - يترجم لك الي تبيه من اي لغة
+!short - يختصر لك رابط كبير الى رابط صغير
+!tag - يكتب لك الكلمة بشكل جميل وكبير
+!google - للبحث في قوقل عن طريق الدسكورد
+!perms - يعرض لك برمشناتك بالسيرفر
+!yn - تسأل بوت والبوت يجاوبك بنعم او لا
+!w - امر يخليك مثل بوت تكتب عبره مع امر ويسويك بوت
+!za5 - يزخرف لك كلمة او جملة』
+!rooms - يعرض لك كل الرومات الي بالسيرفر مع عدده
+!roles - يعرض لك كل الرانكات بالسيرفر بشكل جميل
+!emojilist - يعرض لك كل الايموجيات الي بالسيرفر
+say - يكرر الكلام الي تكتبو
+!image - صورة السيرفر
+!members - ��عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
+!id - معلومات عنك
+!profile - عرض بروفايل حقك
+!tc - انشاء روم مؤقت ويمكنك تحديد الاعدادات
+!bans - عدد الاشخاص المبندة 
+!voice - يوم لك بكتابه مجموع عدد الاشخاص الموجودين برومات
+!avatar - صورتك او صورة الي تمنشنو』
+!embed - يكرر الي تقولو بشكل حلو』
+!discrim - كود يضهر لك الاشخاص نفس تاقك』
+!emoji <any things> - لتحويل اي كلمه تقولها الي ايموجي
 **
   `
 ,`
         ***__Administrative Orders__***
 **
-『!move @user /  لسحب الشخص الى روومك』
-『!voiceonline /  لتفعيل خاصيه فويس اونلاين يسحب عدد الاشخاص موجودين برومات』
-『!bc / رسالة جماعية الى كل اعضاء السيرفر』
-『!bcrole / لارسال رساله جماعي لرتبه محدده يجب تمنشنها 』
-『!role @user <rank> / لأعطاء رتبة لعضو معين』
-『!roleremove @user <rank> / لازالة الرتبة من شخص معين』
-『!role all <rank> / لأعطاء رتبة للجميع』
-『!role humans <rank> / لأعطاء رتبة للاشخاص فقط』
-『!role bots <rank> / لأعطاء رتبة لجميع البوتات』
-『!hchannel / اخفاء الشات』
-『!schannel / اضهار الشات المخفية』
-『!clr <numbr> / مسح الشات بعدد』
-『!clear / مسح الشات』
-『!mute @user <reason> / اعطاء العضو ميوت لازم رتبة <Muted>』
-『!unmute @user / لفك الميوت عن الشخص 』
-『!kick @user <reason> / طرد الشخص من السيرفر』
-『!ban @user <reason> / حضر الشخص من السيرفر』
-『!mutechannel / تقفيل الشات』
-『!unmutechannel / فتح الشات』
-『!dc / مسح كل الرومات』
-『!dr / <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات』
-『!ct <name> / انشاء شات』
-『!cv <name> / انشاء رووم فويس』
-『!delet <name> / مسح الشات او الرووم فويس』
-『❖!ccolors <number> / ينشا لك الوان مع كم الوان تبي』**
+!move @user - لسحب الشخص الى روومك
+!bc - أرسال برود كاست للكل
+!obc - لأرسال برود كاست للأونلاين
+!bcrole - ارسال رساله جماعي لرتبه محدده يجب تمنشنها 
+!role @user <rank> - لأعطاء رتبة لعضو معين』
+!roleremove @user <rank> - لازالة الرتبة من شخص معين
+!role all <rank> - أعطاء رتبة للجميع
+!role humans <rank> - لأعطاء رتبة للاشخاص فقط
+!role bots <rank> - أعطاء رتبة لجميع البوتات
+!hchannel - اخفاء الشات
+!schannel - اضهار الشات المخفية
+!clr <numbr> - مسح الشات بعدد
+!clear - مسح الشات
+!mute @user <reason> - اعطاء العضو ميوت لازم رتبة <Muted>
+!unmute @user - لفك الميوت عن الشخص 』
+!kick @user <reason> - طرد الشخص من السيرفر
+!ban @user <reason> - حضر الشخص من السيرفر
+!mutechannel - تقفيل الشات
+!unmutechannel - فتح الشات
+!dc - مسح كل الرومات
+!dr - <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
+!ct <name> - انشاء شات
+!cv <name> - انشاء رووم فويس
+!delet <name> - مسح الشات او الرووم فويس
+!ccolors <number> - ينشا لك الوان مع كم الوان تبي**
    `,`
         ***__Music orders__***
 **
-『${prefix}play / لتشغيل أغنية برآبط أو بأسم』
-『${prefix}skip / لتجآوز الأغنية الحآلية』
-『${prefix}pause / إيقآف الأغنية مؤقتا』
-『${prefix}resume / لموآصلة الإغنية بعد إيقآفهآ مؤقتا』
-『${prefix}vol / لتغيير درجة الصوت 100 - 0』
-『${prefix}stop / لإخرآج البوت من الروم』
-『${prefix}np / لمعرفة الأغنية المشغلة حآليا』
-『${prefix}queue / لمعرفة قآئمة التشغيل』
+${prefix}play - لتشغيل أغنية برآبط أو بأسم
+${prefix}skip - لتجآوز الأغنية الحآلية
+${prefix}pause - إيقآف الأغنية مؤقتا
+${prefix}resume - لموآصلة الإغنية بعد إيقآفهآ مؤقتا
+${prefix}vol  -  لتغيير درجة الصوت 100 - 0
+${prefix}stop - لإخرآج البوت من الروم
+${prefix}np - لمعرفة الأغنية المشغلة حآليا
+${prefix}queue - لمعرفة قآئمة التشغيل
 **
         ***__Games orders__***
  **       
-『!rps / حجر ورقة مقص』
-『!speed / اسرع كتابة』
-『!quas / اسئلة عامة』
-『!نكت / نكت 』
-『!لعبة فكك / فكك』
-『!عواصم عشوائي/عواصم』
-『!لعبة كت تويت / كت تويت』
-『!roll <number> / قرعة』
-『!لو خيروك بطريقة حلوة / لو خيروك』
-『!لعبة مريم / مريم』
-『!فوائد ونصائح  / هل تعلم』
-『!يعطيك عقابات قاسية / عقاب 』
+!rps - حجر ورقة مقص
+!speed - اسرع كتابة
+!quas - اسئلة عامة
+!نكت - نكت 
+!لعبة - فكك / فكك
+!عواصم عشوائي/عواصم
+!لعبة كت تويت / كت تويت
+!roll <number> / قرعة
+!لو خيروك بطريقة حلوة / لو خيروك
+!لعبة مريم / مريم
+!فوائد ونصائح  / هل تعلم
+!يعطيك عقابات قاسية / عقاب 
 
 
 **
@@ -1583,33 +1652,6 @@ function getValue(key, array) {
     }
   }
 }
-client.on('message', message => {
-var prefix = "!";
-
-    if (message.author.id === client.user.id) return;
-    if (message.guild) {
-   let embed = new Discord.RichEmbed()
-    let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.split(' ')[0] == prefix + 'bcb') {
-    if (!args[1]) {
-message.channel.send("**!bcb <message>**");
-return;
-}
-        message.guild.members.forEach(m => {
-   if(!message.member.hasPermission('ADMINISTRATOR')) return;
-            var bc = new Discord.RichEmbed()
-            .addField('» السيرفر :', `${message.guild.name}`)
-        0    .addField('» المرسل : ', `${message.author.username}#${message.author.discriminator}`)
-            .addField(' » الرسالة : ', args)
-            .setColor('#ff0000')
-            // m.send(`[${m}]`);
-            m.send(`${m}`,{embed: bc});
-        });
-    }
-    } else {
-        return;
-    }
-});
 
 let points = {};
 const type = [
