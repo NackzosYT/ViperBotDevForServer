@@ -3254,8 +3254,6 @@ client.on("guildMemberAdd", member => {
 //////////////log///////////
 
 
-let bane = JSON.parse(fs.readFileSync("./bcer.json", "utf8"));
-let banse = new Set();
 client.on('guildBanAdd', function(guild) {
   guild.fetchAuditLogs().then(logs => {
     const ser = logs.entries.first().executor;
