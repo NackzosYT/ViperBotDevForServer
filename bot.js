@@ -335,7 +335,7 @@ coll.first().delete()
 client.on('ready', function(){
   client.user.setStatus("dnd");
     var ms = 40000 ;	
-    var setGame = ['!inv','!help'];	
+    var setGame = ['!help | ViprBot'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
@@ -545,7 +545,7 @@ Arab Shop يقدم لكم بوت
 『!ct <name> / انشاء شات』
 『!cv <name> / انشاء رووم فويس』
 『!delet <name> / مسح الشات او الرووم فويس』
-『❖!ccolors <number> / ينشا لك الوان مع كم الوان تبي』
+『❖!ccolors <number> / ينشا لك الوان مع كم الوان تبي』**
    `,`
         ***__Music orders__***
 **
@@ -619,10 +619,10 @@ Arab Shop يقدم لكم بوت
     }
 }); 
 client.on('message', message => {
-     if (message.content === (prefix + "heAlp")) {
+     if (message.content === (prefix + "help")) {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setColor("#8650a7")
+  .setColor("#RANDOM")
   .addField("Done" , " تــــم ارســالك في الخــاص")
   message.channel.sendEmbed(embed);
     }
