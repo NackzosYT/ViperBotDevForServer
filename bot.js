@@ -544,107 +544,20 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
     let pages = [`
 ***__وصف عن البوت__***
 **
-ViperBot
+- ViperBot
 افضل الميزات :heart:
 :gem:  البوت فيه كثير ميزات حلوة و جميلة
  ا:rocket: البوت يعمل 24 ساعه 
 بوت يمتلك مضد جحفله +سبام+نشر روابط+مضاد سب :gear: 
 وحمايه قويه من الهكر و المخترقين
-قريبا سوف نضيف اللوق
-**
-        ***__General orders__***
-**
-!allbots - لعرض جميع البوتات الي بالسيرفر
-!server - يعرض لك معلومات عن السيرفر
-!bot - يعرض لك كل معلومات البوت
-!skin <name> - يعرض لك سكنك بماين كرافت
-!count - يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
-!invites - يعرض لك  عدد انفايتاتك بالسيرفر 
-!invite-codes - يعرض لك روابط الانفايتات حكك في السيرفر 
-!cal - اله حاسبة
-!trans <language> <any thing> - يترجم لك الي تبيه من اي لغة
-!short - يختصر لك رابط كبير الى رابط صغير
-!tag - يكتب لك الكلمة بشكل جميل وكبير
-!google - للبحث في قوقل عن طريق الدسكورد
-!perms - يعرض لك برمشناتك بالسيرفر
-!yn - تسأل بوت والبوت يجاوبك بنعم او لا
-!w - امر يخليك مثل بوت تكتب عبره مع امر ويسويك بوت
-!za5 - يزخرف لك كلمة او جملة』
-!rooms - يعرض لك كل الرومات الي بالسيرفر مع عدده
-!roles - يعرض لك كل الرانكات بالسيرفر بشكل جميل
-!emojilist - يعرض لك كل الايموجيات الي بالسيرفر
-say - يكرر الكلام الي تكتبو
-!image - صورة السيرفر
-!members - ��عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
-!id - معلومات عنك
-!profile - عرض بروفايل حقك
-!tc - انشاء روم مؤقت ويمكنك تحديد الاعدادات
-!bans - عدد الاشخاص المبندة 
-!voice - يوم لك بكتابه مجموع عدد الاشخاص الموجودين برومات
-!avatar - صورتك او صورة الي تمنشنو』
-!embed - يكرر الي تقولو بشكل حلو』
-!discrim - كود يضهر لك الاشخاص نفس تاقك』
-!emoji <any things> - لتحويل اي كلمه تقولها الي ايموجي
-**
-  `
-,`
-        ***__Administrative Orders__***
-**
-!move @user - لسحب الشخص الى روومك
-!bc - أرسال برود كاست للكل
-!obc - لأرسال برود كاست للأونلاين
-!bcrole - ارسال رساله جماعي لرتبه محدده يجب تمنشنها 
-!role @user <rank> - لأعطاء رتبة لعضو معين』
-!roleremove @user <rank> - لازالة الرتبة من شخص معين
-!role all <rank> - أعطاء رتبة للجميع
-!role humans <rank> - لأعطاء رتبة للاشخاص فقط
-!role bots <rank> - أعطاء رتبة لجميع البوتات
-!hchannel - اخفاء الشات
-!schannel - اضهار الشات المخفية
-!clr <numbr> - مسح الشات بعدد
-!clear - مسح الشات
-!mute @user <reason> - اعطاء العضو ميوت لازم رتبة <Muted>
-!unmute @user - لفك الميوت عن الشخص 』
-!kick @user <reason> - طرد الشخص من السيرفر
-!ban @user <reason> - حضر الشخص من السيرفر
-!mutechannel - تقفيل الشات
-!unmutechannel - فتح الشات
-!dc - مسح كل الرومات
-!dr - <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
-!ct <name> - انشاء شات
-!cv <name> - انشاء رووم فويس
-!delet <name> - مسح الشات او الرووم فويس
-!ccolors <number> - ينشا لك الوان مع كم الوان تبي**
-   `,`
-        ***__Music orders__***
-**
-${prefix}play - لتشغيل أغنية برآبط أو بأسم
-${prefix}skip - لتجآوز الأغنية الحآلية
-${prefix}pause - إيقآف الأغنية مؤقتا
-${prefix}resume - لموآصلة الإغنية بعد إيقآفهآ مؤقتا
-${prefix}vol  -  لتغيير درجة الصوت 100 - 0
-${prefix}stop - لإخرآج البوت من الروم
-${prefix}np - لمعرفة الأغنية المشغلة حآليا
-${prefix}queue - لمعرفة قآئمة التشغيل
-**
-        ***__Games orders__***
- **       
-!rps - حجر ورقة مقص
-!speed - اسرع كتابة
-!quas - اسئلة عامة
-!نكت - نكت 
-!لعبة - فكك / فكك
-!عواصم عشوائي/عواصم
-!لعبة كت تويت / كت تويت
-!roll <number> / قرعة
-!لو خيروك بطريقة حلوة / لو خيروك
-!لعبة مريم / مريم
-!فوائد ونصائح  / هل تعلم
-!يعطيك عقابات قاسية / عقاب 
+انشئ روم باسم 
+log | لانشاء روم يخبرك اي شيئ يصير في السيرفر
 
-
+!help-public | لروئيه الاوامر العامه
+!help-admin  | لروئيه الاوامر الاداريه
+!help-music  | لروئيه اوامر الاغاني
+!help-games  | لروئيه اوامر الالعاب
 **
-   
 `]
     let page = 1;
 
@@ -696,6 +609,328 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
+
+////publicOrders///
+client.on('message', message => {
+if (message.content.startsWith(prefix + 'help-public')) { /// This is The DMS Code Send The Help In DMS // Code By NotGucci
+    let pages = [`
+        ***__الاوامر العامه__***
+**
+!allbots - لعرض جميع البوتات الي بالسيرفر
+!server - يعرض لك معلومات عن السيرفر
+!bot - يعرض لك كل معلومات البوت
+!skin <name> - يعرض لك سكنك بماين كرافت
+!count - يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
+!invites - يعرض لك  عدد انفايتاتك بالسيرفر 
+!invite-codes - يعرض لك روابط الانفايتات حكك في السيرفر 
+!cal - اله حاسبة
+!trans <language> <any thing> - يترجم لك الي تبيه من اي لغة
+!short - يختصر لك رابط كبير الى رابط صغير
+!tag - يكتب لك الكلمة بشكل جميل وكبير
+!google - للبحث في قوقل عن طريق الدسكورد
+!perms - يعرض لك برمشناتك بالسيرفر
+!yn - تسأل بوت والبوت يجاوبك بنعم او لا
+!w - امر يخليك مثل بوت تكتب عبره مع امر ويسويك بوت
+!za5 - يزخرف لك كلمة او جملة』
+!rooms - يعرض لك كل الرومات الي بالسيرفر مع عدده
+!roles - يعرض لك كل الرانكات بالسيرفر بشكل جميل
+!emojilist - يعرض لك كل الايموجيات الي بالسيرفر
+say - يكرر الكلام الي تكتبو
+!image - صورة السيرفر
+!members - ��عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
+!id - معلومات عنك
+!profile - عرض بروفايل حقك
+!tc - انشاء روم مؤقت ويمكنك تحديد الاعدادات
+!bans - عدد الاشخاص المبندة 
+!voice - يوم لك بكتابه مجموع عدد الاشخاص الموجودين برومات
+!avatar - صورتك او صورة الي تمنشنو』
+!embed - يكرر الي تقولو بشكل حلو』
+!discrim - كود يضهر لك الاشخاص نفس تاقك』
+!emoji <any things> - لتحويل اي كلمه تقولها الي ايموجي
+**
+`]
+    let page = 1;
+
+    let embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setFooter(`Page ${page} of ${pages.length}`)
+    .setDescription(pages[page-1])
+
+    message.author.sendEmbed(embed).then(msg => {
+
+        msg.react('◀').then( r => {
+            msg.react('▶')
+
+
+        const backwardsFilter = (reaction, user) => reaction.emoji.name === '◀' && user.id === message.author.id;
+        const forwardsFilter = (reaction, user) => reaction.emoji.name === '▶' && user.id === message.author.id;
+
+
+        const backwards = msg.createReactionCollector(backwardsFilter, { time: 2000000});
+        const forwards = msg.createReactionCollector(forwardsFilter, { time: 2000000});
+
+
+
+        backwards.on('collect', r => {
+            if (page === 1) return;
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            msg.edit(embed)
+        })
+        forwards.on('collect', r => {
+            if (page === pages.length) return;
+      
+      page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            msg.edit(embed)
+        })
+        })
+    })
+    }
+}); 
+client.on('message', message => {
+     if (message.content === (prefix + "help-public")) {
+     let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#RANDOM")
+  .addField("Done" , " تــــم ارســالك في الخــاص")
+  message.channel.sendEmbed(embed);
+    }
+});
+////publicOrders///
+
+////adminOrders///
+client.on('message', message => {
+if (message.content.startsWith(prefix + 'help-admin')) { /// This is The DMS Code Send The Help In DMS // Code By NotGucci
+    let pages = [`
+        ***__الاوامر الاداريه__***
+**
+!move @user - لسحب الشخص الى روومك
+!bc - أرسال برود كاست للكل
+!obc - لأرسال برود كاست للأونلاين
+!bcrole - ارسال رساله جماعي لرتبه محدده يجب تمنشنها 
+!role @user <rank> - لأعطاء رتبة لعضو معين』
+!roleremove @user <rank> - لازالة الرتبة من شخص معين
+!role all <rank> - أعطاء رتبة للجميع
+!role humans <rank> - لأعطاء رتبة للاشخاص فقط
+!role bots <rank> - أعطاء رتبة لجميع البوتات
+!hchannel - اخفاء الشات
+!schannel - اضهار الشات المخفية
+!clr <numbr> - مسح الشات بعدد
+!clear - مسح الشات
+!mute @user <reason> - اعطاء العضو ميوت لازم رتبة <Muted>
+!unmute @user - لفك الميوت عن الشخص 』
+!kick @user <reason> - طرد الشخص من السيرفر
+!ban @user <reason> - حضر الشخص من السيرفر
+!mutechannel - تقفيل الشات
+!unmutechannel - فتح الشات
+!dc - مسح كل الرومات
+!dr - <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
+!ct <name> - انشاء شات
+!cv <name> - انشاء رووم فويس
+!delet <name> - مسح الشات او الرووم فويس
+!ccolors <number> - ينشا لك الوان مع كم الوان تبي**
+**
+`]
+    let page = 1;
+
+    let embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setFooter(`Page ${page} of ${pages.length}`)
+    .setDescription(pages[page-1])
+
+    message.author.sendEmbed(embed).then(msg => {
+
+        msg.react('◀').then( r => {
+            msg.react('▶')
+
+
+        const backwardsFilter = (reaction, user) => reaction.emoji.name === '◀' && user.id === message.author.id;
+        const forwardsFilter = (reaction, user) => reaction.emoji.name === '▶' && user.id === message.author.id;
+
+
+        const backwards = msg.createReactionCollector(backwardsFilter, { time: 2000000});
+        const forwards = msg.createReactionCollector(forwardsFilter, { time: 2000000});
+
+
+
+        backwards.on('collect', r => {
+            if (page === 1) return;
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            msg.edit(embed)
+        })
+        forwards.on('collect', r => {
+            if (page === pages.length) return;
+      
+      page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            msg.edit(embed)
+        })
+        })
+    })
+    }
+}); 
+client.on('message', message => {
+     if (message.content === (prefix + "help-admin")) {
+		 let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#RANDOM")
+  .addField("Done" , " تــــم ارســالك في الخــاص")
+  message.channel.sendEmbed(embed);
+    }
+});
+
+////adminOrders///
+
+///musicOrders///
+
+client.on('message', message => {
+if (message.content.startsWith(prefix + 'help-music')) { /// This is The DMS Code Send The Help In DMS // Code By NotGucci
+    let pages = [`
+        ***__اوامر الموسيقى__***
+**
+${prefix}play - لتشغيل أغنية برآبط أو بأسم
+${prefix}skip - لتجآوز الأغنية الحآلية
+${prefix}pause - إيقآف الأغنية مؤقتا
+${prefix}resume - لموآصلة الإغنية بعد إيقآفهآ مؤقتا
+${prefix}vol  -  لتغيير درجة الصوت 100 - 0
+${prefix}stop - لإخرآج البوت من الروم
+${prefix}np - لمعرفة الأغنية المشغلة حآليا
+${prefix}queue - لمعرفة قآئمة التشغيل
+**
+`]
+    let page = 1;
+
+    let embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setFooter(`Page ${page} of ${pages.length}`)
+    .setDescription(pages[page-1])
+
+    message.author.sendEmbed(embed).then(msg => {
+
+        msg.react('◀').then( r => {
+            msg.react('▶')
+
+
+        const backwardsFilter = (reaction, user) => reaction.emoji.name === '◀' && user.id === message.author.id;
+        const forwardsFilter = (reaction, user) => reaction.emoji.name === '▶' && user.id === message.author.id;
+
+
+        const backwards = msg.createReactionCollector(backwardsFilter, { time: 2000000});
+        const forwards = msg.createReactionCollector(forwardsFilter, { time: 2000000});
+
+
+
+        backwards.on('collect', r => {
+            if (page === 1) return;
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            msg.edit(embed)
+        })
+        forwards.on('collect', r => {
+            if (page === pages.length) return;
+      
+      page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            msg.edit(embed)
+        })
+        })
+    })
+    }
+}); 
+client.on('message', message => {
+     if (message.content === (prefix + "help-music")) {
+		 let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#RANDOM")
+  .addField("Done" , " تــــم ارســالك في الخــاص")
+  message.channel.sendEmbed(embed);
+    }
+});
+
+///musicOrders///
+
+///gamesOrders///
+
+client.on('message', message => {
+if (message.content.startsWith(prefix + 'help-games')) { /// This is The DMS Code Send The Help In DMS // Code By NotGucci
+    let pages = [`
+        ***__اوامر الالعاب__***
+ **       
+!rps - حجر ورقة مقص
+!speed - اسرع كتابة
+!quas - اسئلة عامة
+!نكت - نكت 
+!لعبة - فكك - فكك
+!عواصم عشوائي - عواصم
+!لعبة كت تويت - كت تويت
+!roll <number> -  قرعة
+!لو خيروك بطريقة حلوة  -  لو خيروك
+!لعبة مريم - مريم
+!فوائد ونصائح  - هل تعلم
+!يعطيك عقابات قاسية - عقاب 
+**
+`]
+    let page = 1;
+
+    let embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setFooter(`Page ${page} of ${pages.length}`)
+    .setDescription(pages[page-1])
+
+    message.author.sendEmbed(embed).then(msg => {
+
+        msg.react('◀').then( r => {
+            msg.react('▶')
+
+
+        const backwardsFilter = (reaction, user) => reaction.emoji.name === '◀' && user.id === message.author.id;
+        const forwardsFilter = (reaction, user) => reaction.emoji.name === '▶' && user.id === message.author.id;
+
+
+        const backwards = msg.createReactionCollector(backwardsFilter, { time: 2000000});
+        const forwards = msg.createReactionCollector(forwardsFilter, { time: 2000000});
+
+
+
+        backwards.on('collect', r => {
+            if (page === 1) return;
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            msg.edit(embed)
+        })
+        forwards.on('collect', r => {
+            if (page === pages.length) return;
+      
+      page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            msg.edit(embed)
+        })
+        })
+    })
+    }
+}); 
+client.on('message', message => {
+     if (message.content === (prefix + "help-games")) {
+		 let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#RANDOM")
+  .addField("Done" , " تــــم ارســالك في الخــاص")
+  message.channel.sendEmbed(embed);
+    }
+});
+
+///gamesOrders///
+
 client.on('message', msg => {
 	var prefix = "!";
   if (msg.author.bot) return;
@@ -1300,13 +1535,13 @@ var v1 = new Discord.RichEmbed()
   v1.setTimestamp(new Date())
   v1.setColor("#6a109d")
   v1.setDescription('***__ انتظر .. جاري الحصول علي البيانات __***')
-  v1.setFooter("# | Sliver TeaM |")
+  v1.setFooter("ViperBot")
 var heroo = new Discord.RichEmbed()
 .setColor('#6a109d')
 .setTimestamp(new Date())
 .setThumbnail(client.user.avatarURL)
-.setTitle('Arab Bot Bot Info')
-.setURL('  https://discordapp.com/api/oauth2/authorize?client_id=522295235707928596&permissions=8&scope=bot ')
+.setTitle('ViperBot Info')
+.setURL('  https://discordapp.com/oauth2/authorize?client_id=534113512025358347&permissions=2080898225&scope=bot ')
 .setAuthor(client.user.username,client.user.avatarURL)
 .addField("**البرفكس** :",`**[ ${prefix} ]**`,true)
 .addField("**السيرفرات** :","**[ "+client.guilds.size+" ]**",true)
@@ -1316,7 +1551,7 @@ var heroo = new Discord.RichEmbed()
 .addField("**ايدي البوت **:","**[ "+client.user.id+" ]**",true)
 .addField("**الحجم المستخدم** :",`**[ ${(process.memoryUsage().rss / 1048576).toFixed()}MB ]**`,true)
 .addField("**موعد الاقلاع** :",`**[** **Days:** \`${days}\` **Hours:** \`${hours}\` **Minutes:** \`${minutes}\` **Seconds:** \`${seconds}\` **]**`,true)
-.setFooter("Arab team  |");
+.setFooter("ViperBot");
   message.channel.send({embed:v1}).then(m => {
       setTimeout(() => {
          m.edit({embed:heroo});
@@ -1538,13 +1773,13 @@ client.on("message", async message => {
           if (nul > 0) {
               console.log(`\n${message.author.tag} has ${nul} invites in ${guild.name}\n`)
               var embed = new Discord.RichEmbed()
-                  .setColor("#000000")
+                  .setColor("#random")
                     .addField(`${message.author.username}`, `لقد قمت بدعوة **${nul}** شخص`)
                           message.channel.send({ embed: embed });
                       return;
                     } else {
                        var embed = new Discord.RichEmbed()
-                        .setColor("#000000")
+                        .setColor("#random")
                         .addField(`${message.author.username}`, `لم تقم بدعوة أي شخص لهذة السيرفر`)
 
                        message.channel.send({ embed: embed });
@@ -3015,6 +3250,562 @@ client.on("guildMemberAdd", member => {
       }
       });
 
+
+//////////////log///////////
+
+
+let bane = JSON.parse(fs.readFileSync("./bcer.json", "utf8"));
+let banse = new Set();
+client.on('guildBanAdd', function(guild) {
+  guild.fetchAuditLogs().then(logs => {
+    const ser = logs.entries.first().executor;
+    if(!bane[ser.id+guild.id]) bane[ser.id+guild.id] = {
+      bans: 0
+    }
+    let boner = bane[ser.id+guild.id]
+banse.add(ser.id)
+boner.bans = Math.floor(boner.bans+1)
+
+
+setTimeout(() => {
+  boner.bans = 0
+  banse.delete(ser.id)
+},8000)
+
+if(boner.bans > 3) {
+  let roles = guild.members.get(ser.id).roles.array()
+guild.members.get(ser.id).removeRoles(roles)
+}
+
+    })
+    fs.writeFile('./bcer.json', JSON.stringify(bane), (err) => {
+if (err) console.error(err);
+})
+
+})
+
+client.on('messageDelete', message => {
+
+	if(message.author.bot) return;
+	if(message.channel.type === 'dm') return;
+	if(!message.guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!message.guild.member(client.user).hasPermission('MANAGE_MESSAGES')) return;
+
+	var logChannel = message.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	let messageDelete = new Discord.RichEmbed()
+	.setTitle('**[MESSAGE DELETE]**')
+	.setColor('RED')
+	.setThumbnail(message.author.avatarURL)
+	.setDescription(`**\n**:wastebasket: Successfully \`\`DELETE\`\` **MESSAGE** In ${message.channel}\n\n**Channel:** \`\`${message.channel.name}\`\` (ID: ${message.channel.id})\n**Message ID:** ${message.id}\n**Sent By:** <@${message.author.id}> (ID: ${message.author.id})\n**Message:**\n\`\`\`${message}\`\`\``)
+	.setTimestamp()
+	.setFooter(message.guild.name, message.guild.iconURL)
+
+	logChannel.send(messageDelete);
+});
+client.on('messageUpdate', (oldMessage, newMessage) => {
+
+	if(oldMessage.author.bot) return;
+	if(!oldMessage.channel.type === 'dm') return;
+	if(!oldMessage.guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!oldMessage.guild.member(client.user).hasPermission('MANAGE_MESSAGES')) return;
+
+	var logChannel = oldMessage.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	if(oldMessage.content.startsWith('https://')) return;
+
+	let messageUpdate = new Discord.RichEmbed()
+	.setTitle('**[MESSAGE EDIT]**')
+	.setThumbnail(oldMessage.author.avatarURL)
+	.setColor('BLUE')
+	.setDescription(`**\n**:wrench: Successfully \`\`EDIT\`\` **MESSAGE** In ${oldMessage.channel}\n\n**Channel:** \`\`${oldMessage.channel.name}\`\` (ID: ${oldMessage.channel.id})\n**Message ID:** ${oldMessage.id}\n**Sent By:** <@${oldMessage.author.id}> (ID: ${oldMessage.author.id})\n\n**Old Message:**\`\`\`${oldMessage}\`\`\`\n**New Message:**\`\`\`${newMessage}\`\`\``)
+	.setTimestamp()
+	.setFooter(oldMessage.guild.name, oldMessage.guild.iconURL)
+
+	logChannel.send(messageUpdate);
+});
+
+
+client.on('roleCreate', role => {
+
+	if(!role.guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!role.guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
+
+	var logChannel = role.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	role.guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		let roleCreate = new Discord.RichEmbed()
+		.setTitle('**[ROLE CREATE]**')
+		.setThumbnail(userAvatar)
+		.setDescription(`**\n**:white_check_mark: Successfully \`\`CREATE\`\` Role.\n\n**Role Name:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`)
+		.setColor('GREEN')
+		.setTimestamp()
+		.setFooter(role.guild.name, role.guild.iconURL)
+
+		logChannel.send(roleCreate);
+	})
+});
+client.on('roleDelete', role => {
+
+	if(!role.guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!role.guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
+
+	var logChannel = role.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	role.guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		let roleDelete = new Discord.RichEmbed()
+		.setTitle('**[ROLE DELETE]**')
+		.setThumbnail(userAvatar)
+		.setDescription(`**\n**:white_check_mark: Successfully \`\`DELETE\`\` Role.\n\n**Role Name:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`)
+		.setColor('RED')
+		.setTimestamp()
+		.setFooter(role.guild.name, role.guild.iconURL)
+
+		logChannel.send(roleDelete);
+	})
+});
+client.on('roleUpdate', (oldRole, newRole) => {
+
+	if(!oldRole.guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!oldRole.guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
+
+	var logChannel = oldRole.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	oldRole.guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		if(oldRole.name !== newRole.name) {
+			let roleUpdateName = new Discord.RichEmbed()
+			.setTitle('**[ROLE NAME UPDATE]**')
+			.setThumbnail(userAvatar)
+			.setColor('BLUE')
+			.setDescription(`**\n**:white_check_mark: Successfully \`\`EDITED\`\` Role Name.\n\n**Old Name:** \`\`${oldRole.name}\`\`\n**New Name:** \`\`${newRole.name}\`\`\n**Role ID:** ${oldRole.id}\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(oldRole.guild.name, oldRole.guild.iconURL)
+
+			logChannel.send(roleUpdateName);
+		}
+		if(oldRole.hexColor !== newRole.hexColor) {
+			if(oldRole.hexColor === '#000000') {
+				var oldColor = '`Default`';
+			}else {
+				var oldColor = oldRole.hexColor;
+			}
+			if(newRole.hexColor === '#000000') {
+				var newColor = '`Default`';
+			}else {
+				var newColor = newRole.hexColor;
+			}
+			let roleUpdateColor = new Discord.RichEmbed()
+			.setTitle('**[ROLE COLOR UPDATE]**')
+			.setThumbnail(userAvatar)
+			.setColor('BLUE')
+			.setDescription(`**\n**:white_check_mark: Successfully \`\`EDITED\`\` **${oldRole.name}** Role Color.\n\n**Old Color:** ${oldColor}\n**New Color:** ${newColor}\n**Role ID:** ${oldRole.id}\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(oldRole.guild.name, oldRole.guild.iconURL)
+
+			logChannel.send(roleUpdateColor);
+		}
+	})
+});
+
+
+client.on('channelCreate', channel => {
+
+	if(!channel.guild) return;
+	if(!channel.guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!channel.guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
+
+	var logChannel = channel.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	if(channel.type === 'text') {
+		var roomType = 'Text';
+	}else
+	if(channel.type === 'voice') {
+		var roomType = 'Voice';
+	}else
+	if(channel.type === 'category') {
+		var roomType = 'Category';
+	}
+
+	channel.guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		let channelCreate = new Discord.RichEmbed()
+		.setTitle('**[CHANNEL CREATE]**')
+		.setThumbnail(userAvatar)
+		.setDescription(`**\n**:white_check_mark: Successfully \`\`CREATE\`\` **${roomType}** channel.\n\n**Channel Name:** \`\`${channel.name}\`\` (ID: ${channel.id})\n**By:** <@${userID}> (ID: ${userID})`)
+		.setColor('GREEN')
+		.setTimestamp()
+		.setFooter(channel.guild.name, channel.guild.iconURL)
+
+		logChannel.send(channelCreate);
+	})
+});
+client.on('channelDelete', channel => {
+	if(!channel.guild) return;
+	if(!channel.guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!channel.guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
+
+	var logChannel = channel.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	if(channel.type === 'text') {
+		var roomType = 'Text';
+	}else
+	if(channel.type === 'voice') {
+		var roomType = 'Voice';
+	}else
+	if(channel.type === 'category') {
+		var roomType = 'Category';
+	}
+
+	channel.guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		let channelDelete = new Discord.RichEmbed()
+		.setTitle('**[CHANNEL DELETE]**')
+		.setThumbnail(userAvatar)
+		.setDescription(`**\n**:white_check_mark: Successfully \`\`DELETE\`\` **${roomType}** channel.\n\n**Channel Name:** \`\`${channel.name}\`\` (ID: ${channel.id})\n**By:** <@${userID}> (ID: ${userID})`)
+		.setColor('RED')
+		.setTimestamp()
+		.setFooter(channel.guild.name, channel.guild.iconURL)
+
+		logChannel.send(channelDelete);
+	})
+});
+client.on('channelUpdate', (oldChannel, newChannel) => {
+	if(!oldChannel.guild) return;
+
+	var logChannel = oldChannel.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	if(oldChannel.type === 'text') {
+		var channelType = 'Text';
+	}else
+	if(oldChannel.type === 'voice') {
+		var channelType = 'Voice';
+	}else
+	if(oldChannel.type === 'category') {
+		var channelType = 'Category';
+	}
+
+	oldChannel.guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		if(oldChannel.name !== newChannel.name) {
+			let newName = new Discord.RichEmbed()
+			.setTitle('**[CHANNEL EDIT]**')
+			.setThumbnail(userAvatar)
+			.setColor('BLUE')
+			.setDescription(`**\n**:wrench: Successfully Edited **${channelType}** Channel Name\n\n**Old Name:** \`\`${oldChannel.name}\`\`\n**New Name:** \`\`${newChannel.name}\`\`\n**Channel ID:** ${oldChannel.id}\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(oldChannel.guild.name, oldChannel.guild.iconURL)
+
+			logChannel.send(newName);
+		}
+		if(oldChannel.topic !== newChannel.topic) {
+			let newTopic = new Discord.RichEmbed()
+			.setTitle('**[CHANNEL EDIT]**')
+			.setThumbnail(userAvatar)
+			.setColor('BLUE')
+			.setDescription(`**\n**:wrench: Successfully Edited **${channelType}** Channel Topic\n\n**Old Topic:**\n\`\`\`${oldChannel.topic || 'NULL'}\`\`\`\n**New Topic:**\n\`\`\`${newChannel.topic || 'NULL'}\`\`\`\n**Channel:** ${oldChannel} (ID: ${oldChannel.id})\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(oldChannel.guild.name, oldChannel.guild.iconURL)
+
+			logChannel.send(newTopic);
+		}
+	})
+});
+
+
+client.on('guildBanAdd', (guild, user) => {
+
+	if(!guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
+
+	var logChannel = guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		if(userID === client.user.id) return;
+
+		let banInfo = new Discord.RichEmbed()
+		.setTitle('**[BANNED]**')
+		.setThumbnail(userAvatar)
+		.setColor('DARK_RED')
+		.setDescription(`**\n**:airplane: Successfully \`\`BANNED\`\` **${user.username}** From the server!\n\n**User:** <@${user.id}> (ID: ${user.id})\n**By:** <@${userID}> (ID: ${userID})`)
+		.setTimestamp()
+		.setFooter(guild.name, guild.iconURL)
+
+		logChannel.send(banInfo);
+	})
+});
+client.on('guildBanRemove', (guild, user) => {
+	if(!guild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
+
+	var logChannel = guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		if(userID === client.user.id) return;
+
+		let unBanInfo = new Discord.RichEmbed()
+		.setTitle('**[UNBANNED]**')
+		.setThumbnail(userAvatar)
+		.setColor('GREEN')
+		.setDescription(`**\n**:unlock: Successfully \`\`UNBANNED\`\` **${user.username}** From the server\n\n**User:** <@${user.id}> (ID: ${user.id})\n**By:** <@${userID}> (ID: ${userID})`)
+		.setTimestamp()
+		.setFooter(guild.name, guild.iconURL)
+
+		logChannel.send(unBanInfo);
+	})
+});
+client.on('guildUpdate', (oldGuild, newGuild) => {
+
+	if(!oldGuild.member(client.user).hasPermission('EMBED_LINKS')) return;
+	if(!oldGuild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
+
+	var logChannel = oldGuild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	oldGuild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+
+		if(oldGuild.name !== newGuild.name) {
+			let guildName = new Discord.RichEmbed()
+			.setTitle('**[CHANGE GUILD NAME]**')
+			.setThumbnail(userAvatar)
+			.setColor('BLUE')
+			.setDescription(`**\n**:white_check_mark: Successfully \`\`EDITED\`\` The guild name.\n\n**Old Name:** \`\`${oldGuild.name}\`\`\n**New Name:** \`\`${newGuild.name}\`\`\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(newGuild.name, oldGuild.iconURL)
+
+			logChannel.send(guildName)
+		}
+		if(oldGuild.region !== newGuild.region) {
+			let guildRegion = new Discord.RichEmbed()
+			.setTitle('**[CHANGE GUILD REGION]**')
+			.setThumbnail(userAvatar)
+			.setColor('BLUE')
+			.setDescription(`**\n**:white_check_mark: Successfully \`\`EDITED\`\` The guild region.\n\n**Old Region:** ${oldGuild.region}\n**New Region:** ${newGuild.region}\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(oldGuild.name, oldGuild.iconURL)
+
+			logChannel.send(guildRegion);
+		}
+		if(oldGuild.verificationLevel !== newGuild.verificationLevel) {
+			if(oldGuild.verificationLevel === 0) {
+				var oldVerLvl = 'Very Easy';
+			}else
+			if(oldGuild.verificationLevel === 1) {
+				var oldVerLvl = 'Easy';
+			}else
+			if(oldGuild.verificationLevel === 2) {
+				var oldVerLvl = 'Medium';
+			}else
+			if(oldGuild.verificationLevel === 3) {
+				var oldVerLvl = 'Hard';
+			}else
+			if(oldGuild.verificationLevel === 4) {
+				var oldVerLvl = 'Very Hard';
+			}
+
+			if(newGuild.verificationLevel === 0) {
+				var newVerLvl = 'Very Easy';
+			}else
+			if(newGuild.verificationLevel === 1) {
+				var newVerLvl = 'Easy';
+			}else
+			if(newGuild.verificationLevel === 2) {
+				var newVerLvl = 'Medium';
+			}else
+			if(newGuild.verificationLevel === 3) {
+				var newVerLvl = 'Hard';
+			}else
+			if(newGuild.verificationLevel === 4) {
+				var newVerLvl = 'Very Hard';
+			}
+
+			let verLog = new Discord.RichEmbed()
+			.setTitle('**[GUILD VERIFICATION LEVEL CHANGE]**')
+			.setThumbnail(userAvatar)
+			.setColor('BLUE')
+			.setDescription(`**\n**:white_check_mark: Successfully \`\`EDITED\`\` Guild Verification level.\n\n**Old Verification Level:** ${oldVerLvl}\n**New Verification Level:** ${newVerLvl}\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(oldGuild.name, oldGuild.iconURL)
+
+			logChannel.send(verLog);
+		}
+	})
+});
+client.on('guildMemberUpdate', (oldMember, newMember) => {
+	if(!oldMember.guild) return;
+
+	var logChannel = oldMember.guild.channels.find(c => c.name === 'log');
+	if(!logChannel) return;
+
+	oldMember.guild.fetchAuditLogs().then(logs => {
+		var userID = logs.entries.first().executor.id;
+		var userAvatar = logs.entries.first().executor.avatarURL;
+		var userTag = logs.entries.first().executor.tag;
+
+		if(oldMember.nickname !== newMember.nickname) {
+			if(oldMember.nickname === null) {
+				var oldNM = '`اسمه الاصلي`';
+			}else {
+				var oldNM = oldMember.nickname;
+			}
+			if(newMember.nickname === null) {
+				var newNM = '`اسمه الاصلي`';
+			}else {
+				var newNM = newMember.nickname;
+			}
+
+			let updateNickname = new Discord.RichEmbed()
+			.setTitle('**[UPDATE MEMBER NICKNAME]**')
+			.setThumbnail(userAvatar)
+			.setColor('BLUE')
+			.setDescription(`**\n**:spy: Successfully \`\`CHANGE\`\` Member Nickname.\n\n**User:** ${oldMember} (ID: ${oldMember.id})\n**Old Nickname:** ${oldNM}\n**New Nickname:** ${newNM}\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(oldMember.guild.name, oldMember.guild.iconURL)
+
+			logChannel.send(updateNickname);
+		}
+		if(oldMember.roles.size < newMember.roles.size) {
+			let role = newMember.roles.filter(r => !oldMember.roles.has(r.id)).first();
+
+			let roleAdded = new Discord.RichEmbed()
+			.setTitle('**[ADDED ROLE TO MEMBER]**')
+			.setThumbnail(oldMember.guild.iconURL)
+			.setColor('GREEN')
+			.setDescription(`**\n**:white_check_mark: Successfully \`\`ADDED\`\` Role to **${oldMember.user.username}**\n\n**User:** <@${oldMember.id}> (ID: ${oldMember.user.id})\n**Role:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(userTag, userAvatar)
+
+			logChannel.send(roleAdded);
+		}
+		if(oldMember.roles.size > newMember.roles.size) {
+			let role = oldMember.roles.filter(r => !newMember.roles.has(r.id)).first();
+
+			let roleRemoved = new Discord.RichEmbed()
+			.setTitle('**[REMOVED ROLE FROM MEMBER]**')
+			.setThumbnail(oldMember.guild.iconURL)
+			.setColor('RED')
+			.setDescription(`**\n**:negative_squared_cross_mark: Successfully \`\`REMOVED\`\` Role from **${oldMember.user.username}**\n\n**User:** <@${oldMember.user.id}> (ID: ${oldMember.id})\n**Role:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`)
+			.setTimestamp()
+			.setFooter(userTag, userAvatar)
+
+			logChannel.send(roleRemoved);
+		}
+	})
+	if(oldMember.guild.owner.id !== newMember.guild.owner.id) {
+		let newOwner = new Discord.RichEmbed()
+		.setTitle('**[UPDATE GUILD OWNER]**')
+		.setThumbnail(oldMember.guild.iconURL)
+		.setColor('GREEN')
+		.setDescription(`**\n**:white_check_mark: Successfully \`\`TRANSFER\`\` The Owner Ship.\n\n**Old Owner:** <@${oldMember.user.id}> (ID: ${oldMember.user.id})\n**New Owner:** <@${newMember.user.id}> (ID: ${newMember.user.id})`)
+		.setTimestamp()
+		.setFooter(oldMember.guild.name, oldMember.guild.iconURL)
+
+		logChannel.send(newOwner);
+	}
+});
+
+
+
+
+
+   client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('gmail.com')){
+        message.delete()
+    return message.reply(`** لايمكنك نشر الجيمل  هنا **`)
+    }
+});
+ 
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('snapchat.com')){
+        message.delete()
+    return message.reply(`** لايمكنك نشر سناب شات  هنا **`)
+    }
+});
+ 
+ 
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('instagram.com')){
+        message.delete()
+    return message.reply(`** لايمكنك نشر الانستقرام هنا **`)
+    }
+});
+ 
+ 
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('twitter.com')){
+        message.delete()
+    return message.reply(`** لايمكنك  نشر التويتر هنا **`)
+    }
+});
+ 
+ 
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('facebook.com')){
+        message.delete()
+    return message.reply(`** لايمكنك نشر الفيس بوك هنا **`)
+    }
+});
+ 
+ 
+ 
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('youtube.com')){
+        message.delete()
+    return message.reply(`** لايمكنك نشر اروابط في هذا اسرفر **`)
+    }
+ 
+});
+
+client.on('message', message => {
+  if(message.content.includes('discord.gg')){
+                                          if(!message.channel.guild) return message.reply('** advertising me on DM ? :thinking:   **');
+      if (!message.member.hasPermissions(['ADMINISTRATOR'])){
+      message.delete()
+  return message.reply(`** Not allowed to advertising Here :angry: ! **`)
+  }
+}
+});
+
+
+//////////////log//////////////
 
 
 
