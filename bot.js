@@ -334,10 +334,7 @@ coll.first().delete()
 
 client.on('ready', function(){
   client.user.setStatus("dnd");
-    var ms = 40000 ;	
     var setGame = ['!help | ViprBot'];	
-    var i = -1;	
-    var j = 0;	
     setInterval(function (){	
         if( i == -1 ){	
 j = 1;	
@@ -2999,7 +2996,63 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`:small_orange_diamond: click here `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=534113512025358347&permissions=2080898225&scope=bot`)
+        .setURL(`https://discordapp.com/oauth2/authorize?client_id=534113512025358347&scope=bot&permissions=8`)
+     message.channel.sendEmbed(embed);
+       }
+   });
+
+client.on('message', message => {
+        if (message.content === "!link") {
+            if(!message.channel.guild) return;
+        let embed = new Discord.RichEmbed()
+        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
+        .setTitle(`:small_orange_diamond: click here `)
+        .setURL(`http://viperbot.ml/`)
+     message.channel.sendEmbed(embed);
+       }
+   });
+
+
+client.on('message', message => {
+        if (message.content === "رابط") {
+            if(!message.channel.guild) return;
+        let embed = new Discord.RichEmbed()
+        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
+        .setTitle(`:small_orange_diamond: click here `)
+        .setURL(`http://viperbot.ml/`)
+     message.channel.sendEmbed(embed);
+       }
+   });
+
+client.on('message', message => {
+        if (message.content === "بوت") {
+            if(!message.channel.guild) return;
+        let embed = new Discord.RichEmbed()
+        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
+        .setTitle(`:small_orange_diamond: click here `)
+        .setURL(`http://viperbot.ml/`)
+     message.channel.sendEmbed(embed);
+       }
+   });
+
+client.on('message', message => {
+        if (message.content === "فايبر بوت") {
+            if(!message.channel.guild) return;
+        let embed = new Discord.RichEmbed()
+        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
+        .setTitle(`:small_orange_diamond: click here `)
+        .setURL(`http://viperbot.ml/`)
+     message.channel.sendEmbed(embed);
+       }
+   });
+
+client.on('message', message => {
+        if (message.content === "فايبر") {
+            if(!message.channel.guild) return;
+        let embed = new Discord.RichEmbed()
+        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
+        .setTitle(`:small_orange_diamond: click here `)
+        .setURL(`http://viperbot.ml/`)
      message.channel.sendEmbed(embed);
        }
    });
@@ -3194,7 +3247,7 @@ client.on("guildMemberAdd", member => {
       var Canvas = require('canvas')
       var jimp = require('jimp')
       
-      const w = ['PicsArt_07-17-07.58.02 (1).png'];
+      const w = ['wlc.png'];
       
               let Image = Canvas.Image,
                   canvas = new Canvas(557, 241),
@@ -3807,5 +3860,4 @@ client.on('message', message => {
 
 
 
-//MHSTR END NOW THIS IS END
 client.login(process.env.BOT_TOKEN);
