@@ -3001,61 +3001,6 @@ client.on('message', message => {
        }
    });
 
-client.on('message', message => {
-        if (message.content === "!link") {
-            if(!message.channel.guild) return;
-        let embed = new Discord.RichEmbed()
-        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond: click here `)
-        .setURL(`http://viperbot.ml/`)
-     message.channel.sendEmbed(embed);
-       }
-   });
-
-
-client.on('message', message => {
-        if (message.content === "رابط") {
-            if(!message.channel.guild) return;
-        let embed = new Discord.RichEmbed()
-        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond: click here `)
-        .setURL(`http://viperbot.ml/`)
-     message.channel.sendEmbed(embed);
-       }
-   });
-
-client.on('message', message => {
-        if (message.content === "بوت") {
-            if(!message.channel.guild) return;
-        let embed = new Discord.RichEmbed()
-        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond: click here `)
-        .setURL(`http://viperbot.ml/`)
-     message.channel.sendEmbed(embed);
-       }
-   });
-
-client.on('message', message => {
-        if (message.content === "فايبر بوت") {
-            if(!message.channel.guild) return;
-        let embed = new Discord.RichEmbed()
-        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond: click here `)
-        .setURL(`http://viperbot.ml/`)
-     message.channel.sendEmbed(embed);
-       }
-   });
-
-client.on('message', message => {
-        if (message.content === "فايبر") {
-            if(!message.channel.guild) return;
-        let embed = new Discord.RichEmbed()
-        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond: click here `)
-        .setURL(`http://viperbot.ml/`)
-     message.channel.sendEmbed(embed);
-       }
-   });
 
 client.on('message', message => {
     if (message.content.startsWith("!avatar")) {
@@ -3860,4 +3805,5 @@ client.on('message', message => {
 
 
 
+//MHSTR END NOW THIS IS END
 client.login(process.env.BOT_TOKEN);
