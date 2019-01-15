@@ -28,11 +28,23 @@ const sql = require("sqlite");
  const dateFormat = require('dateformat'); 
  const pretty = require('pretty-ms') 
 
-    var setGame = ['!help | ViprBot'];	
+,ti={}  
+,spee={};
 
-        client.user.setGame(setGame[i],`https://www.twitch.tv/Nackzos`);	
 
- 
+
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Cyhper Bot Script By : Nackzos`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Nackzos ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`!help | ViperBot`,"http://twitch.tv/Nackzos")
+client.user.setStatus("dnd")
+});
+
+
 
 const superagent = require("superagent")
 client.on('message' , async (message) => {
