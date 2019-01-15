@@ -28,6 +28,10 @@ const sql = require("sqlite");
  const dateFormat = require('dateformat'); 
  const pretty = require('pretty-ms') 
 
+    var setGame = ['!help | ViprBot'];	
+
+        client.user.setGame(setGame[i],`https://www.twitch.tv/Nackzos`);	
+
 ,ti={}  
 ,spee={};
 
@@ -332,21 +336,11 @@ coll.first().delete()
   }
 })
 
-client.on('ready', function(){
-  client.user.setStatus("dnd");
+
     var setGame = ['!help | ViprBot'];	
-    setInterval(function (){	
-        if( i == -1 ){	
-j = 1;	
-       }	
-        if( i == (setGame.length)-1 ){	
-            j = -1;	
-      }	
-       i = i+j;	
+
         client.user.setGame(setGame[i],`https://www.twitch.tv/Nackzos`);	
-}, ms);	
-	
-});
+
 
 client.on('message' , message => {
   var prefix = "!";
