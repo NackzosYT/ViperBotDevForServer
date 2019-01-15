@@ -32,9 +32,6 @@ const sql = require("sqlite");
 
         client.user.setGame(setGame[i],`https://www.twitch.tv/Nackzos`);	
 
-,ti={}  
-,spee={};
-
  
 
 const superagent = require("superagent")
