@@ -28,9 +28,6 @@ const sql = require("sqlite");
  const dateFormat = require('dateformat'); 
  const pretty = require('pretty-ms') 
 
-,ti={}  
-,spee={};
-
 
 
 client.on('ready', () => {
