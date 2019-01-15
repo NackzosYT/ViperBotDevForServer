@@ -37,7 +37,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Nackzos ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`!help | ViperBot`,`"https://www.twitch.tv/Nackzos")
+client.user.setGame(`!help | ViperBot`)
 client.user.setStatus("idle")
 });
 
