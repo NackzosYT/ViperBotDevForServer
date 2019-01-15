@@ -37,7 +37,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Nackzos ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`!help | ViperBot`)
+client.user.setGame(`!help | ViperBot`,`"https://www.twitch.tv/Nackzos")
 client.user.setStatus("idle")
 });
 
@@ -341,11 +341,6 @@ coll.first().delete()
  
   }
 })
-
-
-    var setGame = ['!help | ViprBot'];	
-
-        client.user.setGame(setGame[i],`https://www.twitch.tv/Nackzos`);	
 
 
 client.on('message' , message => {
